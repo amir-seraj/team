@@ -19,15 +19,15 @@ const SinglePost = () => {
             {/* <Title title={post.title} className="title-bg" /> */}
             <div className="img py">
               <img
-                src={post.cover}
+                src={post?.cover}
                 width="100%"
                 height="100%"
                 className="round"
               />
             </div>
             <div className="desc">
-              <TitleSm title={post.heading} />
-              <p className="desc-p">{post.desc}</p>
+              <TitleSm title={post?.heading} />
+              <p className="desc-p">{post?.desc}</p>
             </div>
           </div>
           <Banner />
