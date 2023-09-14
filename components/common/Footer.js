@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="container">
           <div className="grid-4">
             <div className="logo">
-              <TitleLogo title="داس لند" caption="69" className="logobg" />
+              <TitleLogo title="داس لند" caption="" className="logobg" />
               <br />
               <span>سوالی دارید؟ باما در ارتباط باشید.</span>
               <br />

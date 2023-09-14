@@ -14,8 +14,8 @@ const ShowCase = () => {
             <Title title="محصولات منتخب" />
           </div>
           <div className="hero-content grid-3 py">
-            {showcase.map((item) => (
-              <Card data={item} key={item.id} path="showcases" />
+            {showcase.map((item, i) => (
+              <Card data={item} key={i} path="showcases" />
             ))}
           </div>
           <div className="card links">

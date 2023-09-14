@@ -1,8 +1,6 @@
 import React from "react";
 import { TitleSm } from "./common/Title";
-import Link from "next/link";
 import { testimonial } from "@/assets/data/dummydata";
-import { HiOutlineArrowRight } from "react-icons/hi";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -60,8 +58,8 @@ const Testimonial = () => {
           </div>
           <div className="cards">
             <Slider {...settings}>
-              {testimonial.map((user) => (
-                <div>
+              {testimonial.map((user, i) => (
+                <div key={i}>
                   <div className="card">
                     <div className="image">
                       <div className="img">
