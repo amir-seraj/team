@@ -263,7 +263,7 @@ footer {
 .contact {
   .left {
     ul {
-      @include flex(center, start, none);
+      @include flex(center, flex-start, none);
       margin-top: $xll;
       li {
         margin-left: 1rem;
