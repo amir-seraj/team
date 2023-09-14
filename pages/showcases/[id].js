@@ -12,11 +12,13 @@ const SinglePost = () => {
 
   return (
     <>
-      <Head>{/* <h3>{post.title}</h3> */}</Head>
+      <Head>
+        <title>{post?.title}</title>
+      </Head>
       <section className="post-details bg-top py">
         <div className="container">
           <div className="heading-title">
-            {/* <Title title={post.title} className="title-bg" /> */}
+            <Title title={post?.title} className="title-bg" />
             <div className="img py">
               <img
                 src={post?.cover}
