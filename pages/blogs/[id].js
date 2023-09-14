@@ -13,7 +13,7 @@ const SinglePost = () => {
   return (
     <>
       <Head>
-        <title>{post.title}</title>
+        <h3>{post.title}</h3>
       </Head>
       <section className="post-details bg-top">
         <div className="container">
