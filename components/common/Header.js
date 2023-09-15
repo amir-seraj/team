@@ -17,11 +17,15 @@ const Header = () => {
     <>
       <header>
         <div className="container">
+          {" "}
+          <button onClick={() => setOpen(!open)} className="navBtn">
+            {open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}
+          </button>
           <div className="logo">
             <Link href="/">
               <TitleLogo title="داس لند" caption="" className="logomin" />
             </Link>
-          </div>
+          </div>{" "}
           <nav
             className={open ? "openMenu" : "closeMenu"}
             onClick={() => setOpen(null)}
@@ -64,9 +68,6 @@ const Header = () => {
               ارتباط با ما{" "}
             </Link>
           </nav>
-          <button onClick={() => setOpen(!open)} className="navBtn">
-            {open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}
-          </button>
         </div>
       </header>
     </>

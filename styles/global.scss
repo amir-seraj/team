@@ -1,11 +1,20 @@
 /*  Hero Section */
 .hero {
   text-align: center;
-  padding: $xl-6 0;
-  padding-top: $xll-3;
+  // padding: $xl-6 0;
+  // padding-top: $xll-3;
   height: 90vh !important;
   overflow: hidden !important;
   position: relative;
+  .container {
+    .landing {
+      @include flex(center, center, row);
+      .landingVector {
+        width: 70%;
+        height: 70%;
+      }
+    }
+  }
   &::before {
     content: "";
     position: absolute;
@@ -20,7 +29,7 @@
     overflow-x: hidden !important;
   }
   .hero-title {
-    font-size: $xll-2;
+    font-size: $xll;
     line-height: 115px;
     font-weight: 600;
     margin: $xl-6 0;
@@ -327,6 +336,27 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+  .hero {
+    .container {
+      @include flex(flex-start, space-around, column);
+      .landing {
+        @include flex(center, center, column);
+        .logobg {
+          display: none;
+        }
+        .hero-title {
+          font-size: $xl-6;
+          line-height: 50px;
+          font-weight: 600;
+          margin-top: 3rem;
+        }
+        .landingVector {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
   .banner {
     .container {
       @include flex(center, none, column);

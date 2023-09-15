@@ -1,10 +1,12 @@
 import { home } from "@/assets/data/dummydata";
+import landing from "@/assets/images/land.png";
 import Banner from "@/components/Banner";
 import Expertise from "@/components/Expertise";
 import ShowCase from "@/components/ShowCase";
 import Testimonial from "@/components/Testimonial";
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
 import { BlogCard, Brand } from "@/components/router";
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
@@ -12,11 +14,15 @@ const Hero = () => {
     <>
       <section className="hero">
         <div className="container">
-          <TitleLogo title="داس لند" caption="" className="logobg" />
-          <h1 className="hero-title">
-            ما تجربه ای دلنشین برای مشتریان شما می سازیم.
-          </h1>
-
+          <div className="landing">
+            <div>
+              <TitleLogo title="داس لند" caption="" className="logobg" />
+              <h1 className="hero-title">
+                ما تجربه ای دلنشین برای مشتریان شما می سازیم.
+              </h1>
+            </div>
+            <Image src={landing} className="landingVector" />
+          </div>
           <div className="sub-heading">
             <TitleSm title="وب سایت" /> <span>.</span>
             <TitleSm title="برندینگ" /> <span>.</span>
