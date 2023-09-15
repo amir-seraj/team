@@ -19,14 +19,14 @@ const Hero = () => {
               <TitleLogo title="داس لند" caption="" className="logobg" />
               <h1 className="hero-title">
                 ما تجربه ای دلنشین برای مشتریان شما می سازیم.
-              </h1>
+              </h1>{" "}
+              <div className="sub-heading">
+                <TitleSm title="وب سایت" /> <span>.</span>
+                <TitleSm title="برندینگ" /> <span>.</span>
+                <TitleSm title="دیجیتال مارکتینگ" />
+              </div>
             </div>
             <Image src={landing} className="landingVector" />
-          </div>
-          <div className="sub-heading">
-            <TitleSm title="وب سایت" /> <span>.</span>
-            <TitleSm title="برندینگ" /> <span>.</span>
-            <TitleSm title="دیجیتال مارکتینگ" />
           </div>
         </div>
       </section>

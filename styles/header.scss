@@ -9,7 +9,7 @@ header {
     .logo {
       margin-left: 3rem;
     }
-    @include flex(center, center, none);
+    @include flex(center, space-between, none);
     nav {
       a {
         margin: 0 $xl-2;
@@ -66,6 +66,11 @@ header {
 }
 
 @media screen and (min-width: 800px) {
+  header {
+    .container {
+      @include flex(center, center, none);
+    }
+  }
   .navBtn {
     display: none;
   }

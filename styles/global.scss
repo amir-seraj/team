@@ -1,12 +1,12 @@
 /*  Hero Section */
 .hero {
   text-align: center;
-  // padding: $xl-6 0;
-  // padding-top: $xll-3;
+  padding-bottom: $xll;
   height: 90vh !important;
   overflow: hidden !important;
   position: relative;
   .container {
+    margin-bottom: $xll;
     .landing {
       @include flex(center, center, row);
       .landingVector {
@@ -65,10 +65,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: -10%;
+    top: -25%;
     left: 0%;
     width: 100%;
-    height: 200px;
+    height: 100%;
     z-index: -1;
     background-color: $dark;
     filter: blur(20px);
